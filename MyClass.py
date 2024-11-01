@@ -34,7 +34,7 @@ class Student(Person):
         print("ID: ", self.student_id)
         print("Age: ", self.age)
         print("Address: ", self.address)
-        print("Enrolled Courses: ")
+        print("Enrolled Courses: ", self.courses)
         for i in self.courses:
             i.display_course_info()
         print("Grades: ", self.grades)
@@ -54,9 +54,7 @@ class Course:
         print("Course Name:", self.course_name)
         print("Code:", self.course_code)
         print("Instructor:", self.instructor)
-        print("Enrolled Students:")
-        for i in self.students:
-            i.name
+        print("Enrolled Students:", self.students)
     
 # objCourse = Course("Physics","PHY101","Rabbil")
 # objCourse.add_student("Hasan")
